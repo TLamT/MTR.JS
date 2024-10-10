@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MTR</title>
+    <script src="mtr.js"></script>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script></script>
+    <div id="time"></div>
+    <div id="container2">
+      <div id="up-line"></div>
+      <div id="down-line"></div>
+    </div>
+  </body>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+    #container {
+      display: flex;
+      justify-content: space-evenly;
+      font-weight: bolder;
+      font-size: 18px;
+    }
+    .line-button {
+      border: 1px solid;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    #container2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      margin: 2em;
+      background-image: url("https://c4.wallpaperflare.com/wallpaper/764/505/66/baby-groot-4k-hd-superheroes-wallpaper-preview.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    #up-line {
+      width: 50%;
+      align-items: center;
+      justify-content: center;
+    }
+    #down-line {
+      width: 50%;
+      align-items: center;
+      justify-content: center;
+    }
+    .station {
+      margin: 1em;
+      border-radius: 20px;
+      opacity: 90%;
+      width:100px;
+      opacity: 60%;
+      font-size: 16px;
+      
+    }
+    #time {
+      display: flex;
+      justify-content: center;
+    }
+
+    @media (width<680px) {
+      #container {
+        flex-wrap: wrap;
+        
+      }
+      .line-button {
+        display: block;
+      }
+    }
+  </style>
+</html>
